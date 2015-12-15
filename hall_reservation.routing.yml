@@ -1,0 +1,70 @@
+
+hall_reservation.default_controller_index:
+  path: '/hall/reservation/index'
+  defaults:
+    _controller: '\Drupal\hall_reservation\Controller\DefaultController::index'
+    _title: 'Default Controller'
+  requirements:
+    _permission: 'access content'
+
+# ReservationEntity routing definition
+entity.reservation_entity.canonical:
+  path: '/admin/reservation_entity/{reservation_entity}'
+  defaults:
+    _entity_view: 'reservation_entity'
+    _title: 'Hall Reservation'
+  requirements:
+    _entity_access: 'reservation_entity.view'
+  options:
+    _admin_route: TRUE
+
+entity.reservation_entity.collection:
+  path: '/admin/reservation_entity'
+  defaults:
+    _entity_list: 'reservation_entity'
+    _title: 'Hall Reservation list'
+  requirements:
+    _permission: 'view hall reservation entities'
+  options:
+    _admin_route: TRUE
+
+entity.reservation_entity.add_form:
+  path: '/admin/reservation_entity/add'
+  defaults:
+    _entity_form: reservation_entity.add
+    _title: 'Add Hall Reservation'
+  requirements:
+    _permission: 'add hall reservation entities'
+  options:
+    _admin_route: TRUE
+
+entity.reservation_entity.edit_form:
+  path: '/admin/reservation_entity/{reservation_entity}/edit'
+  defaults:
+    _entity_form: reservation_entity.edit
+    _title: 'Edit Hall Reservation'
+  requirements:
+    _permission: 'edit hall reservation entities'
+  options:
+    _admin_route: TRUE
+
+entity.reservation_entity.delete_form:
+  path: '/admin/reservation_entity/{reservation_entity}/delete'
+  defaults:
+    _entity_form: reservation_entity.delete
+    _title: 'Delete Hall Reservation'
+  requirements:
+    _permission: 'delete hall reservation entities'
+  options:
+    _admin_route: TRUE
+
+reservation_entity.settings:
+  path: 'admin/structure/reservation_entity'
+  defaults:
+   _form: '\Drupal\hall_reservation\Entity\Form\ReservationEntitySettingsForm'
+   _title: 'Hall Reservation settings'
+  requirements:
+    _permission: 'administer hall reservation entities'
+  options:
+    _admin_route: TRUE
+

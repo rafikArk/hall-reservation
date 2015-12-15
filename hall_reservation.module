@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains hall_reservation.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hall_reservation_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the hall_reservation module.
+    case 'help.page.hall_reservation':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage hall reservations') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hall_reservation_theme() {
+  $theme = [];
+
+  return $theme;
+}

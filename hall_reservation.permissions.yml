@@ -1,0 +1,15 @@
+add hall reservation entities:
+  title: 'Create new Hall Reservation entities'
+
+administer hall reservation entities:
+  title: 'Administer Hall Reservation entities'
+  description: 'Allow to access the administration form to configure Hall Reservation entities.'
+
+delete hall reservation entities:
+  title: 'Delete Hall Reservation entities'
+
+edit hall reservation entities:
+  title: 'Edit Hall Reservation entities'
+
+view hall reservation entities:
+  title: 'View Hall Reservation entities'

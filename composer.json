@@ -1,0 +1,14 @@
+{
+  "name": "drupal/hall_reservation",
+  "type": "drupal-module",
+  "description": "Manage hall reservations",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "http://drupal.org/project/hall_reservation",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/hall_reservation",
+    "source": "http://cgit.drupalcode.org/hall_reservation"
+  },
+  "require": { }
+}

@@ -1,0 +1,12 @@
+# Hall Reservation menu items definition
+entity.reservation_entity.collection:
+  title: 'Hall Reservation list'
+  route_name: entity.reservation_entity.collection
+  description: 'List Hall Reservation entities'
+
+reservation_entity.admin.structure.settings:
+  title: Hall Reservation settings
+  description: 'Configure Hall Reservation entities'
+  route_name: reservation_entity.settings
+  parent: system.admin_structure
+

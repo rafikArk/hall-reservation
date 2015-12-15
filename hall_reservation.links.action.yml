@@ -1,0 +1,7 @@
+entity.reservation_entity.add_form:
+  route_name: entity.reservation_entity.add_form
+  title: 'Add Hall Reservation'
+  appears_on:
+    - entity.reservation_entity.collection
+    - entity.reservation_entity.canonical
+

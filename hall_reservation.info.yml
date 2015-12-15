@@ -1,0 +1,5 @@
+name: Hall_Reservation
+type: module
+description: Manage hall reservations
+core: 8.x
+package: Arkdev

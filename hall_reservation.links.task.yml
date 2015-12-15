@@ -1,0 +1,22 @@
+# Hall Reservation routing definition
+reservation_entity.settings_tab:
+  route_name: reservation_entity.settings
+  title: 'Settings'
+  base_route: reservation_entity.settings
+
+entity.reservation_entity.canonical:
+  route_name: entity.reservation_entity.canonical
+  base_route: entity.reservation_entity.canonical
+  title: 'View'
+
+entity.reservation_entity.edit_form:
+  route_name: entity.reservation_entity.edit_form
+  base_route: entity.reservation_entity.canonical
+  title: Edit
+
+entity.reservation_entity.delete_form:
+  route_name:  entity.reservation_entity.delete_form
+  base_route:  entity.reservation_entity.canonical
+  title: Delete
+  weight: 10
+
